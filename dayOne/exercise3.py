@@ -4,5 +4,8 @@
 print("Hello " + input("What is your name?") + "!")
 
 # Write a program that prints the number of characters in a user's name.
-name = input("What is your name? ") #had to assign input into a variable inorde to print it
+name = input("What is your name? ") #can assign input into a variable 
 print(len(name)) #the variable is used when printing 
+
+#or
+print( len( input("What is your name?"))) # fill it all in one line for same result
