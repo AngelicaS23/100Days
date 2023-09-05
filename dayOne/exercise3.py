@@ -7,5 +7,5 @@ print("Hello " + input("What is your name?") + "!")
 name = input("What is your name? ") #can assign input into a variable 
 print(len(name)) #the variable is used when printing 
 
-#or
+#or, but not as clean as the first option
 print( len( input("What is your name?"))) # fill it all in one line for same result
