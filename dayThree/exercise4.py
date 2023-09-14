@@ -52,19 +52,38 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 bill = 0
 if size == "S":
     bill = 15
-    print("pay 15")
+    # print("pay 15")
     if add_pepperoni == "Y":
         bill += 2
 elif size == "M":
     bill = 20
-    print("pay 20")
+    # print("pay 20")
     if add_pepperoni == "Y":
         bill += 3 
 elif size == "L":
     bill = 25
-    print("pay 25")
+    # print("pay 25")
     if add_pepperoni == "Y":
         bill += 3 
 if extra_cheese == "Y":
     bill += 1
 print(f"Your finall bill is {bill}. ")
+
+#Dr. Angela Yu Notes
+bill = 0
+#size of pizza
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:           #or use elif and omit else
+    bill += 25
+#addition to pizza 
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese == "Y":
+    bill += 1
+print(f"Your final bill is ${bill}")
